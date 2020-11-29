@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const loginToken = "NzgyNTI4MzYzNDQ4NTAwMjI1.X8NgVA.e2C1uC8gWF-CrfmCriP3HY5mAtI";
 
 bot.on('ready', () => {
     console.log('Robine Diplomacy Automation online!');
@@ -67,4 +66,4 @@ bot.on('message', async message => {
     }
 })
 
-bot.login(loginToken)
+bot.login(process.env.token)
